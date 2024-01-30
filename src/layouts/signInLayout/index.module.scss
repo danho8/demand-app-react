@@ -1,0 +1,24 @@
+.app {
+	background: var(--white-color);
+	overflow-y: auto;
+	height: 100vh;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+.body {
+	padding-top: var(--default-header-desktop-height);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.contentPage {
+	margin-top: auto;
+	flex: 1;
+}
+
+.footer-area {
+	display: flex;
+	justify-content: center;
+}

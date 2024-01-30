@@ -1,0 +1,65 @@
+.input_container {
+	width: 100%;
+	margin-bottom: 1.2rem;
+}
+
+.label_input {
+	font-weight: 600;
+	color: var(--text-color);
+	width: 100%;
+}
+
+.label_suggestion {
+	font-weight: 600;
+	color: var(--error-input-color);
+	width: 100%;
+	font-size: 1.2rem;
+}
+
+.error {
+	color: var(--error-input-color);
+	margin-top: 0.6rem;
+	width: 100% !important;
+}
+
+.input {
+	margin-top: 0.5rem;
+	padding: 0.5rem 0;
+	background: transparent;
+	line-height: 1.5;
+	font-size: 1.5rem;
+	resize: vertical;
+	border-width: 0.01rem;
+	border-radius: 2.4rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border: 0.1rem solid black;
+	& .input-item {
+		padding: 1rem;
+		flex: 1;
+		height: 100%;
+		border: none;
+		background: transparent;
+		color: var(--background-login-button-color);
+		&::placeholder {
+			color: var(--background-login-button-color);
+		}
+	}
+	& .eyes-btn {
+		cursor: pointer;
+		color: black;
+		margin: 0 1.2rem;
+		&:hover {
+			color: var(--text-color);
+		}
+	}
+}
+
+.input:focus {
+	outline-color: red;
+}
+
+.input:hover {
+	border: 0.1rem solid var(--text-color);
+}

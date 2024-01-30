@@ -1,0 +1,189 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+:root {
+	// Color
+	--main-color: #9cc2d6;
+	--white-color: #fff;
+	--black-color: #000;
+	--blue-color: #9474ff;
+	--blue-color-3b: #3b49df;
+	--aqua-color-eb: #ebecfc;
+	--success-color: rgb(29, 192, 29);
+	--warning-dangerous-color: rgba(243, 204, 204, 1);
+	--banner-color: rgb(214, 149, 35);
+
+	// Background color
+	--background-color: rgba(240, 244, 247, 1);
+	--background-main-color: #f5f5f5;
+	--th-tag-background-color: rgba(234, 255, 255, 0.3);
+	--tr-tag-background-color: rgba(255, 255, 255, 0.7);
+	--background-sidebar-color: linear-gradient(to bottom, rgba(23, 27, 46, 1), rgba(42, 52, 71, 1));
+	--background-button-next-hover-color: linear-gradient(to right, #a5f4f9 0%, #fff);
+	--scroll-top-to-bottom-color: linear-gradient(to bottom, #a5f4f9 0%, #fff);
+	--background-app-color: rgba(245, 245, 245, 1);
+	--background-button-previous-hover-color: linear-gradient(to left, #a5f4f9 0%, #fff);
+	--background-button-color: radial-gradient(circle at center, #a5f4f9 0%, #fff);
+	--background-button-submit-color: linear-gradient(to left, #8df2f9 0%, #a6e1fc);
+	--background-button-hover-color: radial-gradient(circle at center, #9df2f8 0%, #fcfafa);
+	--background-button-submit-hover-color: linear-gradient(to left, #74f4fd 0%, #8ed9fb);
+	--background-item-sidebar-color: rgba(221, 250, 251, 1);
+	--background-header: #222;
+	--background-hover-sidebar: #928282;
+	--background-login-button-color: #6a6a6a;
+
+	// Border color
+	--border-color: #e2e2e2;
+	--border-content-header-color: rgba(226, 226, 226, 1);
+	--border-color-e0: #e0e0e0;
+	--border-left-item-sidebar: #246f85;
+
+	// Border radius
+	--row-border-radius: 0.6rem;
+
+	//Text color
+	--text-color: black;
+	--text-color-half-opacity: rgba(106, 173, 192, 0.6);
+	--text-login-color: #dfdfdf;
+	--title-demand-detailed-color: rgba(34, 34, 34, 0.85);
+	--cancel-button-text-hover-color: #a7a7a7;
+	--cancel-button-text-color: rgba(214, 214, 214, 0.9);
+	--cancel-button-background-hover-color: linear-gradient(
+		to left,
+		rgba(204, 198, 198, 0.8) 0%,
+		rgba(218, 211, 211, 0.6)
+	);
+	--orange-text: rgb(219, 124, 7);
+
+	// Icon color
+	--icon-color: rgba(146, 197, 205, 1);
+
+	// Shadow color
+	--shadow-color: rgba(3, 3, 3, 0.1);
+
+	// Placehoder color
+	--placeholder-color: #525252;
+
+	// Error
+	--error-border-color: rgb(204, 8, 8);
+	--error-input-color: red;
+
+	//background modal color
+	--modal-background-color: rgba(0, 0, 0, 0.5);
+	--modal-confirm-background-color: rgba(0, 0, 0, 0.05);
+
+	// Fontsize
+	--default-font-size: 16px;
+	--h2-default-font-size: 2.8rem;
+
+	// Line-height
+	--default-line-height: 1.6rem;
+	--sidebar-width: 26rem;
+	--h2-default-line-height: 2.8rem;
+	--textBox-line-height: 2.2rem;
+
+	// Width
+	--medium-body-width: 102.4rem;
+	--default-body-max-width: 144rem;
+	--default-sidebar-desktop-width: 24rem;
+	--tab-width: 10.2rem;
+	--search-width: 30rem;
+	--filter-width: 21rem;
+	--text-row-width: 23.6rem;
+
+	// Height
+	--default-header-desktop-height: 6rem;
+	--default-footer-desktop-height: 30rem;
+	--default-item-sidebar-height: 5rem;
+	--tab-height: 4.4rem;
+
+	// footer-text-color
+	--text-footer-title: #dbdbdb;
+	--text-footer-content: #9a9a9a;
+
+	// Opacity
+	--icon-opacity-default: 0.85;
+
+	// Freedom constant
+	--two-thirds: 2/3;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	max-width: 100vw;
+	overflow-x: hidden;
+	text-rendering: optimizeSpeed;
+	background-color: var(--background-main-color);
+	font-size: var(--default-font-size);
+	line-height: var(--default-line-height);
+}
+
+h2 {
+	font-size: var(--h2-default-font-size);
+	line-height: var(--h2-default-line-height);
+	font-weight: 700;
+	color: var(--text-color);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input,
+button,
+td,
+th,
+select {
+	outline: none;
+	border: none;
+}
+
+// input,
+// select {
+// 	font-size: var(--default-font-size);
+// }
+
+.loadingArea {
+	pointer-events: none;
+	text-align: center;
+	background: var(--th-tag-background-color);
+}
+
+.btn {
+	padding: 12px 2rem;
+	cursor: pointer;
+	border-radius: 0.8rem;
+	transition: 0.1s;
+	display: block;
+	border: none;
+	outline: none;
+	font-weight: 600;
+	width: 8rem;
+	text-align: center;
+}
+
+//Remove Arrows/Spinners input number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input {
+	min-width: 10rem;
+}

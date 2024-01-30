@@ -1,0 +1,135 @@
+.wrapper {
+	width: var(--medium-body-width);
+	padding: 1rem 1.6rem 3rem;
+	margin: 0 auto;
+}
+
+.settings-title {
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+
+.settings-group2 {
+	margin-top: 2rem;
+	width: 80% !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.settings-body {
+	background-color: var(--white-color);
+	padding: 1.6rem;
+	border-radius: 0.8rem;
+	margin-top: 1.4rem;
+
+	&:not(:first-child) {
+		margin-top: 3rem;
+	}
+
+	& .title {
+		font-size: 2.4rem;
+		margin-bottom: 2rem;
+		margin-left: 0;
+	}
+
+	& .form-group {
+		display: flex;
+		flex-direction: column;
+		gap: 1.8rem;
+	}
+
+	& .form-field {
+		display: flex;
+		flex-direction: column;
+	}
+
+	& .error-text {
+		color: var(--error-border-color);
+		margin-top: 0.4rem;
+		font-size: 1.1rem;
+	}
+
+	& .label-field {
+		margin-bottom: 0.8rem;
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: black;
+	}
+
+	& .input-field {
+		color: black;
+		outline-color: black;
+		padding: 1.2rem 0.8rem;
+		border: 1px solid var(--border-color);
+		border-radius: 0.4rem;
+		appearance: none;
+		margin: 0;
+		width: 100%;
+		&::placeholder {
+			color: var(--placeholder-color);
+		}
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+
+	& .button-save {
+		color: white;
+		background-color: black;
+		border: none;
+		outline: none;
+		padding: 1.3rem 0;
+		cursor: pointer;
+		border-radius: 0.8rem;
+		font-weight: 600;
+		font-size: 1.4rem;
+		opacity: 0.92;
+		margin-top: 1rem;
+		
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.input-field.read-only {
+	background-color: #f3f3f3;
+	pointer-events: none;
+}
+
+.password-group {
+	position: relative;
+	& .input-field {
+		width: 100%;
+	}
+	& .eyes-btn {
+		position: absolute;
+		right: 10px;
+		top: 15px;
+		color: black;
+		cursor: pointer;
+	}
+}
+.important {
+	color: var(--error-border-color);
+}
+.user-name {
+	color: black;
+}
+
+@media (max-width: 1024px) {
+	.wrapper {
+		max-width: 100%;
+		width: 100%;
+		padding: 1rem 0.8rem 3rem;
+	}
+
+	.settings-group {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
